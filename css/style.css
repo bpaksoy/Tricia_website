@@ -126,7 +126,9 @@ ol {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center 0;
+	height: 500px;
 }
+
 
 /*------------------------
   Common Elements
@@ -760,7 +762,7 @@ ol {
 }
 
 .single-portfolio {
-	height: 580px;
+	height: 1080px;
 	width: 33.333333%;
 	position: relative;
 	float: left;

@@ -27,6 +27,68 @@
 	<![endif]-->
 
 </head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+.hero-image {
+	position: relative;
+	height: 600px;
+	overflow: hidden;
+	background: url("img/headers-bg/stamp.jpg") no-repeat center;
+	background-size: cover;
+	border: 3px solid black;
+}
+</style>
 <body>
 	<!-- Page Preloder -->
 	<div id="preloder">
@@ -50,20 +112,18 @@
 
 
 	<!-- Hero section start -->
-	<section class="hero-section">
-		<div class="hero-slider owl-carousel">
-			<div class="hs-item set-bg sp-pad" data-setbg="img/headers-bg/image.jpg">
-				<div class="hs-text">
+	<!-- <section class="hero-section"> -->
+		<!-- <div class="hero-slider owl-carousel"> -->
+			<div class="hero-image">
 
-				</div>
 			</div>
 			<!-- <div class="hs-item set-bg sp-pad" data-setbg="img/hero-slider/2.jpg">
 				<div class="hs-text">
 
 				</div>
 			</div> -->
-		</div>
-	</section>
+		<!-- </div> -->
+	<!-- </section> -->
 	<!-- Hero section end -->
 
 
@@ -89,68 +149,27 @@
 	</section>
 	<!-- Intro section end -->
 
+		<div id="row" class="row">
+		  <div id="column" class="column">
+		    <img src="img/portfolio/11.jpg">
+		    <img src="img/portfolio/10.jpg">
+		    <img src="img/portfolio/5.jpg">
+		    <img src="img/portfolio/4.jpg">
+		    <img src="img/portfolio/3.jpg">
+		    <img src="img/portfolio/2.jpg">
+		    <img src="img/portfolio/1.jpg">
+		  </div>
+			<div id="column" class="column">
+		    <img src="img/portfolio/6.jpg">
+		    <img src="img/portfolio/7.jpg">
+		    <img src="img/portfolio/8.jpg">
+		    <img src="img/portfolio/9.jpg">
+		    <img src="img/portfolio/12.jpg">
+		    <img src="img/portfolio/13.jpg">
+  	 </div>
+   </div>
 
-	<!-- Portfolio section start -->
-	<section class="portfolio-section">
-		<div class="portfolio-warp">
-			<!-- single item -->
-			<div class="single-portfolio set-bg" data-setbg="img/portfolio/nerd.jpg" id="first">
-				<a href="single-work.html" class="portfolio-info">
-					<div class="pfbg set-bg" data-setbg="img/portfolio/nerd.jpg"></div>
-					<h5>The Lingerie Consultant</h5>
-					<p>Sculpture</p>
-				</a>
-			</div>
-			<!-- single item -->
-			<div class="single-portfolio set-bg" data-setbg="img/portfolio/2.jpg">
-				<a href="single-work.html" class="portfolio-info">
-					<div class="pfbg set-bg" data-setbg="img/portfolio/2.jpg"></div>
-					<h5>Over a Barrel</h5>
-					<p>Sculpture</p>
-				</a>
-			</div>
-			<!-- single item -->
-			<div class="single-portfolio set-bg" data-setbg="img/portfolio/3.jpg">
-				<a href="single-work.html" class="portfolio-info">
-					<div class="pfbg set-bg" data-setbg="img/portfolio/3.jpg"></div>
-					<h5>Clash of Cultures</h5>
-					<p>Sculpture</p>
-				</a>
-			</div>
-			<!-- single item -->
-			<div class="single-portfolio sm-wide set-bg" data-setbg="img/portfolio/4.jpg">
-				<a href="single-work.html" class="portfolio-info">
-					<div class="pfbg set-bg" data-setbg="img/portfolio/4.jpg"></div>
-					<h5>A Hot Shot</h5>
-					<p>Sculpture</p>
-				</a>
-			</div>
-			<!-- single item -->
-			<div class="single-portfolio sm-wide set-bg" data-setbg="img/portfolio/5.jpg">
-				<a href="single-work.html" class="portfolio-info">
-					<div class="pfbg set-bg" data-setbg="img/portfolio/5.jpg"></div>
-					<h5>Homogenized</h5>
-					<p>Sculpture</p>
-				</a>
-			</div>
-			<!-- single item -->
-			<div class="single-portfolio set-bg" data-setbg="img/portfolio/6.jpg">
-				<a href="single-work.html" class="portfolio-info">
-					<div class="pfbg set-bg" data-setbg="img/portfolio/6.jpg"></div>
-					<h5>Primal Scream Threapy</h5>
-					<p>Sculpture</p>
-				</a>
-			</div>
-			<!-- single item -->
-			<div class="single-portfolio sm-wide md-w-100 set-bg " data-setbg="img/portfolio/11.jpg" >
-				<a href="portfolio.html" class="portfolio-info">
-					<div class="pfbg set-bg" data-setbg="img/portfolio/11.jpg"></div>
-					<h5>Angel in Tidy Whities</h5>
-					<p>Sculpture</p>
-				</a>
-			</div>
-		</div>
-		<div class="clearfix"></div>
+		<div class="clearfix"></div><br/>
 	</section>
 	<!-- Portfolio section end -->
 

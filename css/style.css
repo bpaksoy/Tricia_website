@@ -55,6 +55,7 @@ p {
 
 img {
 	max-width: 100%;
+	border: 1px solid black;
 }
 
 input:focus,
@@ -680,7 +681,7 @@ ol {
 }
 
 .hs-item {
-	min-height: 950px;
+	min-height: 5px;
 	position: relative;
 	display: table;
 	width: 100%;
@@ -693,6 +694,7 @@ ol {
 	height: 100%;
 	left: 0;
 	top: 0;
+	border: 5px solid black;
 	/* background: #000;
 	opacity: 0.7; */
 }
@@ -762,7 +764,7 @@ ol {
 }
 
 .single-portfolio {
-	height: 1080px;
+	height: 580px;
 	width: 33.333333%;
 	position: relative;
 	float: left;
@@ -1037,7 +1039,7 @@ ol {
 ========================*/
 
 .page-top-area {
-	height: 300px;
+	height: 800px;
 	position: relative;
 }
 
@@ -1048,7 +1050,6 @@ ol {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: #000;
 	opacity: 0.7;
 }
 
